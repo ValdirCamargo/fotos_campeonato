@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body
+{
+    background-color: #f9f9f9;
+}
+#minha-galeria
+{
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 50px auto;
+    background-color:#555555;
+    border: 5px solid white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-raddius: 4px;
+
+    box-shadow: 0px 0px 10px #222;
+}
+#minha-galeria .img-maior
+{
+    width: 600px;
+    height:300px;
+    background-color: #333;
+    overflow: hidden;
+    /**/
+}
+#minha-galeria .img-maior img
+{
+    max-width: 650px;
+    height: auto;
+}
+#minha-galeria .img-pequena
+{
+    width: 600px;
+    height: 60px;
+    background-color: #222;
+}
+#minha-galeria .img-pequena .img-rolder
+{
+    width:80px;
+    height: 50px;
+    margin: 5px 0px 5px 5px;
+    float: left;
+    overflow: hidden;
+}
+#minha-galeria .img-pequena .img-rolder a span
+{
+    display: none;
+}
+#minha-galeria .img-pequena img
+{
+    max-width: 85px;;
+    height: auto;
+    opacity: .5;
+    border-radius:4px ;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-raddius: 4px;
+}
+#minha-galeria .img-pequena img:hover
+{
+    opacity: 1;
+}
+.full-scren
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    background-color: #555555;
+}
+.full-scren .menu
+{
+    position: absolute;
+    z-index: 0;
+    right: 400px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: brown;
+
+}
+.full-scren .menu ul
+{
+    display: block;
+    float:right ;
+}
+.full-scren .menu ul li
+{
+    padding: 0px 20px;
+    line-height: 50px;
+    color: white;
+    font-family:Verdana;
+    float: left;
+}
+
+.img-full
+{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 50px;
+    right: 400px;
+    bottom: 50px;
+    overflow: hidden;
+}
+.img-full img
+{
+    display: block;
+    width: 90%;
+    margin:10px  auto;
+}
+.info
+{
+    width: 400px;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 0;
+    right:0 ;
+    top: 0;
+    bottom:0 ;
+}
+.info .info-text
+{
+    padding: 40px;
+}
+.info .close
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 2em;
+    z-index: 1;
+    font-family:Verdana;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+
+}
