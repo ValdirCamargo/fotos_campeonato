@@ -5,7 +5,18 @@
 }
 body
 {
-    background-color: #f9f9f9;
+    background-color: #333333;
+}
+.title
+{
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+    z-index: 1;
+    font-family:Verdana;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
 }
 #minha-galeria
 {

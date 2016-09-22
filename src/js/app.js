@@ -36,9 +36,15 @@ $(function () {
     $fullScreen = $('.full-scren');
     $('.img-rolder a').click(function () {
         var imgSrc = $(this).attr('href');
-        console.log(imgSrc);
+        var infoText=$(this).find('span').html();
+        $fullScreen.find('.info-text').html(infoText);
+        console.log(infoText);
+        $fullScreen.find('.img-full img').attr('src',imgSrc);
 
-        $fullScreen.find('.img-full');
+            $fullScreen.fadeIn('fast');
         return false;
+    });
+    $('.info .close').click(function () {
+        $fullScreen.fadeOut('fast');
     });
 });
